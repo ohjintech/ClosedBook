@@ -98,7 +98,7 @@ body {
 
 .card {
   color: black;
-  background: #f3f3f3;
+  background: #dbcccc;
   padding: 2rem;
   border: 1px solid lightgray;
   box-shadow: 1px 1px 5px rgba(22, 22, 22, 0.915);
@@ -127,6 +127,13 @@ body {
 
 .btnLg {
   height: 5rem;
+}
+
+.btnLogin{
+  background: #8bbeca;
+  border: 1px solid steelblue;
+  padding: 0.5rem 1rem;
+  height: 3rem;
 }
 
 /* character photo */
@@ -217,13 +224,13 @@ body {
 }
 
 /* cards container */
-.charContainer {
+.bioContainer {
   padding: 1rem 3rem;
   display: grid;
 }
 
-/* character card container */
-.charCard {
+/* bio card container */
+.bioCard {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -231,7 +238,7 @@ body {
 }
 
 /* character card header */
-.charHeadContainer {
+.bioHeadContainer {
   display: flex;
   flex-direction: row;
   align-items: center;

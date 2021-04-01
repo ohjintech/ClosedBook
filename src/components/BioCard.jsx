@@ -23,14 +23,14 @@ const BioCard = ({ info, openModal } ) => {
   return (
 
     <article className="card bioCard">
-      <div className="charHeadContainer">
-        <h3 className="charName">{firstName} {lastName}</h3>
+      <div className="bioHeadContainer">
+        <h3 className="memberName">{firstName} {lastName}</h3>
       </div>
       <ul className="bioDetailsList">
-        <li className="charDetail">Current Location: {currentLocation}</li>
-        <li className="charDetail">Home Town: {homeTown}</li>
-        <li className="charDetail">Previous Job: {previousJob}</li>
-        <li className="charDetail">Hobbies: {hobbies}</li>
+        <li className="bioDetail">Current Location: {currentLocation}</li>
+        <li className="bioDetail">Home Town: {homeTown}</li>
+        <li className="bioDetail">Previous Job: {previousJob}</li>
+        <li className="bioDetail">Hobbies: {hobbies}</li>
       </ul>
     </article>
   );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import BioCard from './BioCard';
 import DetailsModal from './DetailsModal';
@@ -89,12 +89,20 @@ class Bios extends Component {
     return (
       <section className="mainSection">
         <header className="pageHeader">
+          
+            
+         
           <h2>Cohort 42 Bios</h2>
+          <button type="button" className="btnLogin">
+              Login
+          </button>
+
         </header>
 
-        {bioElems}
-        
-        
+        <div className="bioContainer">
+          {bioElems}
+        </div>
+      
       </section>
     )
   }
