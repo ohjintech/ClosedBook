@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+console.log('Connecting to Mongoose Database....')
+
 // connecting to the mongoose database
 mongoose.connect('mongodb+srv://ohjintech:RedBull226@tacocluster.0pmit.mongodb.net/cohortBios?retryWrites=true&w=majority', 
   { userNewUrlParser: true, useUnifiedTopology: true , dbName: 'cohortBios'}

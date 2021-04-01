@@ -13,14 +13,14 @@ router.get('/bioDetail',
 );
 
 // 
-router.put('/bioDetail', 
+router.patch('/bioDetail', 
   bioController.updateProfile, 
-  bioController.getProfileDetail, 
+  //bioController.getProfileDetail, 
   (req, res) => res.status(200).send(res.locals.bios)
 );
 
 
-  // (req, res) => res.status(200).send(tempDB));
+// (req, res) => res.status(200).send(tempDB));
 
 // get request for location data
 // router.get('/currentLocation',
@@ -50,3 +50,5 @@ router.put('/bioDetail',
 // router.get('/',
 //   bioController.getFunFact,
 //
+
+module.exports = router;
