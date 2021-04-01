@@ -1,0 +1,58 @@
+{
+  "name": "cohortbios",
+  "version": "1.0.0",
+  "description": "First solo project",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env process.env.NODE_ENV=production nodemon server/server.js",
+    "build": "cross-env process.env.NODE_ENV=production webpack",
+    "dev": "cross-env process.env.NODE_ENV=development concurrently \"webpack-dev-server --open\"  \"nodemon server/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohjintech/CohortBios.git"
+  },
+  "author": "Jin Taco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohjintech/CohortBios/issues"
+  },
+  "homepage": "https://github.com/ohjintech/CohortBios#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "concurrently": "^5.3.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^1.0.1",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-hot-middleware": "^2.24.3"
+  }
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "_id": 1,
+    "firstName": "Alex",
+    "lastName": "Yu",
+    "currentLocation": "New York", 
+    "homeTown": "Los Angeles",
+    "hobbies": "I have a strong passion for all things music; including audio equipment!"
+  },
+  {
+    "_id": 2,
+    "firstName": "Alison",
+    "lastName": "Ziel",
+    "currentLocation": "San Diego", 
+    "homeTown": "Boston",
+    "hobbies": "Anything involving water!"
+  },
+  {
+    "_id": 3,
+    "firstName": "Andrew",
+    "lastName": "Kim",
+    "currentLocation": "Fullterton", 
+    "homeTown": "Los Angeles",
+    "hobbies": "My personal passions and hobbies primarily have to do with reading and writing."
+  },
+  {
+    "_id": 4,
+    "firstName": "Michael",
+    "lastName": "Caballero",
+    "currentLocation": "South Carolina", 
+    "homeTown": "South Carolina",
+    "hobbies": "I frequently go for hikes and runs. My favorite time to run is when it is raining outside."
+  },
+  {
+    "_id": 5,
+    "firstName": "Bruno",
+    "lastName": "Portela",
+    "currentLocation": "Carlsbad", 
+    "homeTown": "Brazil",
+    "hobbies": "I have a strong passion for all things music; including audio equipment!"
+  },
+  {
+    "_id": 6,
+    "firstName": "Christian",
+    "lastName": "Ejercito",
+    "currentLocation": "Santa Clara", 
+    "homeTown": "Daly City",
+    "hobbies": "Video games and board games are both my passion and my hobby."
+  },
+  {
+    "_id": 7,
+    "firstName": "Cliffert",
+    "lastName": "Assuncao",
+    "currentLocation": "Florida", 
+    "homeTown": "Florida",
+    "hobbies": "I enjoy cycling, learning, and being out in nature from time to time."
+  },
+  {
+    "_id": 8,
+    "firstName": "Daryl",
+    "lastName": "Foster",
+    "currentLocation": "Fountain Valley, CA", 
+    "homeTown": "Fountain Valley, CA",
+    "hobbies": "Airsoft, shooting range, cyberpunk 2077, E-Biking on my hand built E-Bike, Gyming with my friends in our personal gym."
+  },
+  {
+    "_id": 9,
+    "firstName": "David",
+    "lastName": "Suh",
+    "currentLocation": "La Crescenta", 
+    "homeTown": "Los Angeles",
+    "hobbies": "I love watching and playing baseball and golf, I love to hike and meet new people."
+  },
+  {
+    "_id": 10,
+    "firstName": "Dylan",
+    "lastName": "Bury",
+    "currentLocation": "Los Angeles", 
+    "homeTown": "Houston, Texas",
+    "hobbies": "My current passion is chess. I love to play video games and board games. I'm an avid consumer of Math-related YouTube videos."
+  },
+  {
+    "_id": 11,
+    "firstName": "Emily",
+    "lastName": "Liu",
+    "currentLocation": "Somerville", 
+    "homeTown": "Boston ",
+    "hobbies": "Some of my hobbies include cryptocurrency, philosophy/literature/film, and snowboarding"
+  },
+  {
+    "_id": 12,
+    "firstName": "Peter",
+    "lastName": "Lee ",
+    "currentLocation": "DTLA", 
+    "homeTown": "South Korea",
+    "hobbies": "Traveling gives my opportunity to meet new people and experience other cultures."
+  },
+  {
+    "_id": 13,
+    "firstName": "Jason",
+    "lastName": "Lee",
+    "currentLocation": "Long Beach", 
+    "homeTown": "Irvine ",
+    "hobbies": "I am most passionate about competing. I fulfill this passion mainly through hobbies such as competitive video games and basketball. "
+  },
+  {
+    "_id": 14,
+    "firstName": "Jin",
+    "lastName": "Oh",
+    "currentLocation": "Irvine, CA", 
+    "homeTown": "Irvine, CA",
+    "hobbies": "I've always been fascinated with flying - airplanes and rockets will always be my passion. "
+  },
+  {
+    "_id": 15,
+    "firstName": "John",
+    "lastName": "Lee",
+    "currentLocation": "Los Angeles", 
+    "homeTown": "San Fernando Valley",
+    "hobbies": "I loved playing basketball and was pretty competitive about it. Enjoyed playing with friends and competing in small tournaments."
+  },
+  {
+    "_id": 16,
+    "firstName": "Jono",
+    "lastName": "Ramirez",
+    "currentLocation": "San Diego, CA", 
+    "homeTown": "San Diego, CA",
+    "hobbies": "I love spending time with my wife, son and dog. We do a lot of walks here in San Diego. "
+  },
+  {
+    "_id": 17,
+    "firstName": "JC",
+    "lastName": "Fernandez",
+    "currentLocation": "Temecula, CA", 
+    "homeTown": "San Diego, CA",
+    "hobbies": "I have two main hobbies and those are video games and working out."
+  },
+  {
+    "_id": 18,
+    "firstName": "Danny",
+    "lastName": "Martinez",
+    "currentLocation": "Tucson, Arizona", 
+    "homeTown": "Tucson, Arizona",
+    "hobbies": "My main passion and hobby is in computers and technology."
+  },
+
+  {
+    "_id": 19,
+    "firstName": "Joseph",
+    "lastName": "Bigelow",
+    "currentLocation": "Minnesota", 
+    "homeTown": "Minnesota",
+    "hobbies": "Performing is obviously a huge passion of mine, and I miss it very much. I am also very passionate about literature."
+  },
+  {
+    "_id": 20,
+    "firstName": "Justin",
+    "lastName": "Baik",
+    "currentLocation": "Buena Park", 
+    "homeTown": "Korea ",
+    "hobbies": "I recently got into soccer about 2 years ago and used to play 2 times a week before Covid."
+  },
+  {
+    "_id": 21,
+    "firstName": "Kai",
+    "lastName": "Evans",
+    "currentLocation": "New York", 
+    "homeTown": "Los Angeles",
+    "hobbies": "Some passion and hobbies of mine include archival clothing, snowboarding, and food hunting."
+  },
+  {
+    "_id": 22,
+    "firstName": "Kevin",
+    "lastName": "Park",
+    "currentLocation": "Los Angeles", 
+    "homeTown": "Lexington, MA",
+    "hobbies": "I love being active - hiking, long-boarding, boxing - but staying indoors for board games & movies is just as great."
+  },
+  {
+    "_id": 23,
+    "firstName": "Kirsten",
+    "lastName": "Yoon",
+    "currentLocation": "Fullerton, CA", 
+    "homeTown": "Fullerton, CA",
+    "hobbies": "I'm a family gal! I love spending time with my husband and dog at the park, rock climbing, and backpacking!"
+  },
+  {
+    "_id": 24,
+    "firstName": "Mo",
+    "lastName": "Hmaidi",
+    "currentLocation": "New Orleans, Louisiana", 
+    "homeTown": "Greece",
+    "hobbies": "I like to go hiking, rock climbing and weightlifting!"
+  },
+  {
+    "_id": 25,
+    "firstName": "Max",
+    "lastName": "Weisenberger",
+    "currentLocation": "Signal Hill, CA", 
+    "homeTown": " Long Beach, California",
+    "hobbies": "While I was working in the entertainment industry, I developed a passion for travel. Having the opportunity to go to far away places has changed the way I see the world."
+  },
+  {
+    "_id": 26,
+    "firstName": "Nachiket",
+    "lastName": "Pingle",
+    "currentLocation": "New York", 
+    "homeTown": "Pune, India",
+    "hobbies": "I love rowing and own a concept 2 rowing machine.  I also swim few times a week for exercise or just to relax myself."
+  },
+  {
+    "_id": 27,
+    "firstName": "Nick",
+    "lastName": "Brush",
+    "currentLocation": "New York", 
+    "homeTown": "Los Angeles",
+    "hobbies": "I like playing piano, specifically jazz and blues. I also enjoy playing video games with friends."
+  },
+  {
+    "_id": 28,
+    "firstName": "Sebastian",
+    "lastName": "Damazo",
+    "currentLocation": "Santa Barbara", 
+    "homeTown": "Peru",
+    "hobbies": "I got into video shooting and editing with a few buddies of mine. I very much like to draw and be creative so learning how to use adobe illustrator, Premier pro, and after effects was a fun hobby to get into."
+  },
+  {
+    "_id": 29,
+    "firstName": "Tiffany",
+    "lastName": "Graves",
+    "currentLocation": "Virginia", 
+    "homeTown": "Virginia",
+    "hobbies": "I really enjoy gardening and hope to start a vegetable garden this summer.  I enjoy music-whether listening to music or playing an instrument for relaxation. I also enjoy painting."
+  },
+  {
+    "_id": 30,
+    "firstName": "Tobey",
+    "lastName": "Forsman",
+    "currentLocation": "Santa Monica", 
+    "homeTown": "Mechanicsburg, Pennsylvania",
+    "hobbies": "I love making music! My apartment is full of guitars, synthesizers, cables, microphones and computers. I built a screaming fast Hackintosh to run Ableton Live and make tunes."
+  },
+  {
+    "_id": 31,
+    "firstName": "Ty",
+    "lastName": "$$$ Doan",
+    "currentLocation": "San Francisco", 
+    "homeTown": "Pittsburgh, Pennsylvania",
+    "hobbies": "I'm passionate about computers and technology. I also love to build things, both physical and digital - anything from rebuilding my car to building data analysis tools!"
+  },
+  {
+    "_id": 32,
+    "firstName": "Vince",
+    "lastName": "Vu",
+    "currentLocation": "Los Angeles, CA", 
+    "homeTown": "Los Angeles, CA",
+    "hobbies": "Video games, hiking, and edm "
+  },
+  {
+    "_id": 33,
+    "firstName": "William",
+    "lastName": "Yoon",
+    "currentLocation": " Los Angeles, California", 
+    "homeTown": " Los Angeles, California",
+    "hobbies": "My hobbies include running outdoors, playing video games, snowboarding, and eating good food."
+  },
+  {
+    "_id": 34,
+    "firstName": "Yoko",
+    "lastName": "Kawamoto",
+    "currentLocation": "Seattle", 
+    "homeTown": "Japan",
+    "hobbies": "I love playing music, and have been playing this instrument called ocarina (clay flute) for 9 years."
+  }
+  
+]
