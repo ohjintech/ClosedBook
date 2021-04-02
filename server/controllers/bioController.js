@@ -21,19 +21,35 @@ bioController.getProfilePhoto = (req, res, next) => {
 };
 
 // query the mongoDB database to get all profile details
-bioController.getProfileDetail = (req, res, next) => {
-  console.log('bioController.getProfileDetail: querying mongooseDB for cohort member detail object...')
+bioController.getProfiles = (req, res, next) => {
+  console.log('bioController.getProfiles: querying mongooseDB for cohort members object...')
     Bio.find({}, (err, bios) => {
-        if (err) return next('Error in get bioController.getProfileDetail: ' + JSON.stringify(err))
+        if (err) return next('Error in get bioController.getProfiles: ' + JSON.stringify(err))
         
         // store retrieved data into res.locals object and move on to next middleware
         if (bios) {
-          console.log('Bios Found. Populating DB...', bios)
+          console.log('Bios Found. Populating DB...')
           res.locals.bios = bios;
           return next()
         }
       });
 };
+
+bioController.getDetail = (req, res, next) => {
+  console.log('bioController.findOne: querying mongooseDB for cohort member detail object...')
+    Bio.findOne({_id: req.body._id}, (err, detail) => {
+        if (err) return next('Error in get bioController.findOne: ' + JSON.stringify(err))
+        
+        // store retrieved data into res.locals object and move on to next middleware
+        if (bios) {
+          console.log('Bios Found. Populating DB...')
+          res.locals.detail = detail;
+          return next()
+        }
+      });
+};
+
+
 
 bioController.updateProfile = (req, res, next) => {
   // find member by unique id
@@ -45,7 +61,7 @@ bioController.updateProfile = (req, res, next) => {
     
     // store retrieved data into res.locals object and move on to next middleware
     if (bios) {
-      console.log('Update Request Approved. Updating DB...', bios)
+      console.log('Update Request Approved. Updating DB...')
       res.locals.bios = bios;
       return next();
     }

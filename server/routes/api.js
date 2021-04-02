@@ -6,13 +6,18 @@ const bioController = require('../controllers/bioController');
 
 // sammple database need
 
-// get request to get profile details
+// get request to get all profiles
 router.get('/bioDetail', 
-  bioController.getProfileDetail, 
+  bioController.getProfiles, 
   (req, res) => res.status(200).send(res.locals.bios)
 );
 
-// 
+router.get('/bioDetail/:id',
+  bioController.getDetail, 
+  (req, res) => res.status(200).send(res.locals.detail)
+)
+
+// "606512f2984bad441370f76d"
 router.patch('/bioDetail', 
   bioController.updateProfile, 
   //bioController.getProfileDetail, 

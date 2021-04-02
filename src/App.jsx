@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './stylesheets/styles.css'
+import './stylesheets/styles.scss'
 
 import Bios from './components/Bios'
 
@@ -7,7 +7,7 @@ class App extends Component {
   
   render() {
     return(
-      <div>
+      <div className="router">
         <Bios />
       </div>
     );

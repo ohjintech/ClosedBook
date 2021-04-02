@@ -61,10 +61,12 @@ class Bios extends Component {
   }
 
   render() {
+    
+
     // loading screen
     if (!this.state.fetchedDetails) return (
       <div>
-        <h1> Loading data, please wait....</h1>
+        <h1> Patience is a virtue </h1><p>but holy shit this is taking long...</p>
       </div>
     );
 
@@ -86,23 +88,32 @@ class Bios extends Component {
       );
     });
 
+    console.log('BioDetails: ', bioDetails);
+    console.log('state modal state: ', this.state.modalState.open)
+    console.log('modal state: ', this.modalState)
     return (
       <section className="mainSection">
         <header className="pageHeader">
-          
-            
-         
-          <h2>Cohort 42 Bios</h2>
-          <button type="button" className="btnLogin">
-              Login
-          </button>
 
+          <div className="banner"><img src={`../../assets/cover.png`}/></div>
+                    
         </header>
+        
+        <div id="login"><a href="/login" className="ui button">Login</a></div>
 
         <div className="bioContainer">
           {bioElems}
         </div>
-      
+        {this.state.modalState.open && 
+        <DetailsModal
+          type={this.state.modalState.type}
+          position={this.state.modalState.position}
+          id={this.state.modalState.id}
+          closeModal={this.closeModal}
+  
+        />
+      }
+        
       </section>
     )
   }

@@ -1,0 +1,529 @@
+/* color pallete */
+/*
+
+#40F99B medium spring green
+#61707D dark electric blue
+#9D69A3 pearly purple
+#F5FBEF ivory
+#E85D75 brink pink
+
+
+*/
+
+
+/* reset default styles */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* position: relative; */
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+html {
+  box-sizing: border-box;
+  font: 62.5% 'Source Sans Pro', sans-serif;
+}
+
+
+body {
+  margin: 0px;
+  line-height: 1.3;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+a,
+p,
+li,
+button,
+div {
+  font-size: 1.4rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  border-radius: 0;
+  background: transparent;
+}
+
+/* app container styling */
+body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #61707D;
+  color: #F5FBEF;
+}
+
+.mainSection {
+  margin-bottom: 5rem;
+}
+
+/* page options */
+.charactersPageOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.charactersPageOptions button {
+  width: 100%;
+  max-width: 200px;
+  font-size: 14px;
+  padding: 1rem 1.5rem;
+}
+/*
+color: black;
+  background: #dbcccc;
+  padding: 2rem;
+  border: 1px solid #9D69A3;
+  box-shadow: 1px 1px 5px rgba(22, 22, 22, 0.915);
+  border-radius: 1em;
+*/
+
+/*.bioCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0.5rem;
+}
+*/
+$container-background: #dbcccc;
+$container-text: #61707D;
+$button-border: #40F99B;
+.card {
+  color: #61707D;
+  background: $container-background;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(22, 22, 22, 0.915);
+  border-radius: 1em;
+  .multi-button {
+      z-index: 1;
+      position: absolute;
+      top: 1.25rem;
+      left: 1.25rem;
+      border-radius: 100%;
+      width: 0rem;
+      height: 0rem;
+      transform: translate(-50%, -50%);
+      transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+      i, a {
+          display: grid;
+          place-items: center;
+          position: absolute;
+          width: 2rem;
+          height: 2rem;
+          border: none;
+          border-color: $button-border;
+          border-radius: 100%;
+          background: $container-background;
+          color: $container-text;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+          box-shadow: 0 0 0rem -0.25rem $container-background;
+          &:hover {
+              border: 2px solid;
+              border-color: $button-border;
+              background: $button-border;
+              color: $container-background;
+              box-shadow: 0 0 1rem -0.25rem $button-border;
+          }
+          &:first-child:nth-last-child(1),
+          &:first-child:nth-last-child(1) ~ * {
+              //If there is 1 child
+              &:nth-child(1) {
+                  left: 25%;
+                  top: 25%;
+              }
+          }
+          &:first-child:nth-last-child(2),
+          &:first-child:nth-last-child(2) ~ * {
+              //If there are 2 children
+              &:nth-child(1) {
+                  left: 37.5%;
+                  top: 18.75%;
+              }
+              &:nth-child(2) {
+                  left: 18.75%;
+                  top: 37.5%;
+              }
+          }
+          &:first-child:nth-last-child(3),
+          &:first-child:nth-last-child(3) ~ * {
+              //If there are 3 children
+              &:nth-child(1) {
+                  left: 50%;
+                  top: 15.625%;
+              }
+              &:nth-child(2) {
+                  left: 25%;
+                  top: 25%;
+              }
+              &:nth-child(3) {
+                  left: 15.625%;
+                  top: 50%;
+              }
+          }
+          &:first-child:nth-last-child(4), //If there are 4 children, if first child is also 4th item from bottom get self, and
+          &:first-child:nth-last-child(4) ~ * {
+              //If there are 4 children, if first child is also 4th item from bottom get siblings
+              &:nth-child(1) {
+                  left: 62.5%;
+                  top: 18.75%;
+              }
+              &:nth-child(2) {
+                  left: 37.5%;
+                  top: 18.75%;
+              }
+              &:nth-child(3) {
+                  left: 18.75%;
+                  top: 37.5%;
+              }
+              &:nth-child(4) {
+                  left: 18.75%;
+                  top: 62.5%;
+              }
+          }
+      }
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background: $container-background;
+    color: #9D69A3;
+  }
+  &:hover .multi-button,
+  .multi-button:focus-within {
+      //Hover or a button inside is focused
+      width: 10rem;
+      height: 10rem;
+  }
+  &:hover .multi-button i, .first-child:nth-last-child(3) {
+    background: $button-border
+  }
+}
+
+
+.card_old {
+  color: black;
+  background: #dbcccc;
+  padding: 2rem;
+  border: 1px solid #9D69A3;
+  box-shadow: 1px 1px 5px rgba(22, 22, 22, 0.915);
+  border-radius: 1em;
+}
+
+/*
+#40F99B medium spring green
+#61707D dark electric blue
+#9D69A3 pearly purple
+#F5FBEF ivory
+#E85D75 brink pink
+*/
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* button options */
+.btnMain {
+  color: #e4e4e4;
+  background: steelblue;
+  border: 1px solid steelblue;
+  padding: 0.5rem 1rem;
+  height: 3rem;
+}
+
+.btnSecondary {
+  background: #f3f3f3;
+  padding: 0.5rem 1rem;
+  height: 3rem;
+}
+
+.btnLg {
+  height: 5rem;
+}
+
+.btnLogin{
+  background: #40F99B;
+  border: 1px solid #E85D75;
+  padding: 0.5rem 1rem;
+  height: 3rem;
+}
+
+/* character photo */
+.charPhoto {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+figure {
+  display: block;
+  justify-content: center;
+  text-align: center
+}
+
+.profilePhoto img {
+  max-width:150px;
+  max-height:155px;
+}
+
+/* custom character styles */
+.customCharContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.customizeChar {
+  max-width: 30rem;
+  width: 100%;
+  align-self: center;
+}
+
+/* create character styles */
+.createCharContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.createChar {
+  max-width: 25em;
+  width: 100%;
+  align-self: center;
+}
+
+.createCharFields {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+.createCharFields label {
+  min-width: 8rem;
+  width: 9rem;
+}
+
+.filmCheckboxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxLabel {
+  font-size: 1.2rem;
+}
+
+.createCharButtonContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.errorMsg {
+  color: red;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  padding-top: 0.2rem;
+}
+
+/* nickname styles */
+.nicknameFields {
+  margin: 20px 0;
+}
+
+.nicknameFields label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nicknameFields input {
+  padding: 15px 10px;
+  height: 14px;
+  max-width: 200px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+/* cards container */
+.bioContainer {
+  padding: 1rem 3rem;
+  display: grid;
+}
+
+/* bio card container */
+.bioCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0.5rem;
+}
+
+/* character card header */
+.bioHeadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bioHeadContainer div {
+  width: 100%;
+}
+
+.bioHeadContainer h3 {
+  margin: 0;
+}
+
+.bioHeadContainer .favIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* character card photo */
+.bioCard .bioPhoto {
+  justify-content: center;
+}
+
+/* character additional details - films */
+.charAddlDetail {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.charFilmsList {
+  margin-top: 0;
+}
+
+.charFilm {
+  margin-left: 0.5rem;
+}
+
+/* character buttons */
+.charBtnOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.charBtnOptions .space {
+  margin-bottom: 1rem;
+}
+
+.charBtnOptions button {
+  width: 100%;
+}
+
+/* modal */
+.modal {
+  position: absolute;
+  display: inline-block;
+  padding: 0.8rem;
+  color: black;
+  background: #f3f3f3;
+  border: 1px solid lightgray;
+  border-radius: 5%;
+  box-shadow: 1px 1px 5px rgba(22, 22, 22, 0.915);
+}
+
+.modalName {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modalList {
+  margin: 0;
+}
+
+.modalHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+  MEDIA QUERIES
+  0 - 600px - Mobile phones
+  600 - 900px - Tablet portrait
+  900 - 1200px - Tablet landscape
+  1200 - 1800px - Desktop - normal styles
+  1800px + Large desktop
+*/
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .bioContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bioCard .bioPhoto {
+    justify-content: flex-start;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .bioContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Normal */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .bioContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Lg Screen */
+@media screen and (min-width: 1201px) {
+  .bioContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
